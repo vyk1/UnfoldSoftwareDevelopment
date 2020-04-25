@@ -50,13 +50,13 @@ class IndexPage extends React.Component {
       this.setState({
         timeout: !this.state.timeout
       })
-    }, 325)
+    }, 250)
 
     setTimeout(() => {
       this.setState({
         articleTimeout: !this.state.articleTimeout
       })
-    }, 350)
+    }, 250)
 
   }
 
@@ -70,14 +70,14 @@ class IndexPage extends React.Component {
       this.setState({
         timeout: !this.state.timeout
       })
-    }, 325)
+    }, 250)
 
     setTimeout(() => {
       this.setState({
         isArticleVisible: !this.state.isArticleVisible,
         article: ''
       })
-    }, 350)
+    }, 250)
 
   }
 

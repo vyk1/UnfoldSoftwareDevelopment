@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from '../images/quem_somos.png'
+import pic02 from '../images/code.jpg'
 
 class Main extends React.Component {
   render() {
@@ -12,6 +11,11 @@ class Main extends React.Component {
         onClick={() => {
           this.props.onCloseArticle()
         }}
+        onKeyDown={() => {
+          this.props.onCloseArticle()
+        }}
+        role="button"
+        tabIndex="0"
       ></div>
     )
 
@@ -25,33 +29,18 @@ class Main extends React.Component {
           id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Quem Somos</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic01} alt="quem somos" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            A <i>Unfold Software Development</i> é uma empresa especializada em desenvolvimento de <i>Software</i> para diversos propósitos.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          <p>Mas nossa maior preocupação é que nossos clientes tenham resultados de qualidade e esperados.</p>
+          <p>Portanto, antes de darmos o primeiro passo, utilizamos a metodologia <i>Design First</i>, em que desenhamos o sistema conjuntamente.</p>
           {close}
         </article>
 
@@ -59,27 +48,21 @@ class Main extends React.Component {
           id="work"
           className={`${this.props.article === 'work' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Especialidades</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={pic02} alt="Coding" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            Arquitetamos e desenvolvemos aplicativos <i>mobile</i> (iOS e Android), websites e <i>Progressive Web Apps</i>.
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            SEO - Temos ferramentas para que seu site apareça na primeira página!
+          </p>
+          <p>
+            Trabalhamos para que tudo você precise se preocupar seja apenas com a Hospedagem <span role="img" aria-label="Winky">&#128521;</span>
           </p>
           {close}
         </article>
@@ -88,21 +71,15 @@ class Main extends React.Component {
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
-          <span className="image main">
+          <h2 className="major">Responsável</h2>
+          {/* <span className="image main">
             <img src={pic03} alt="" />
-          </span>
+          </span> */}
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            Confira o <a href="https://vyk1.github.io" target="_blank" rel="noopener noreferrer">Portifólio</a>
           </p>
           {close}
         </article>
@@ -111,54 +88,48 @@ class Main extends React.Component {
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <h2 className="major">Fale Conosco</h2>
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="bot-field" />
             <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <label htmlFor="name">Nome</label>
+              <input required="true" type="text" name="name" id="name" />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input required="true" type="text" name="email" id="email" />
             </div>
             <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <label htmlFor="message">Mensagem</label>
+              <textarea required="true" name="message" id="message" rows="4"></textarea>
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+                <input type="submit" value="Enviar Mensagem" className="special" />
               </li>
               <li>
-                <input type="reset" value="Reset" />
+                <input type="reset" value="Resetar" />
               </li>
             </ul>
           </form>
           <ul className="icons">
             <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a href="#" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
+              <a href="#" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/vyk1"
+                rel="noopener noreferrer"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>

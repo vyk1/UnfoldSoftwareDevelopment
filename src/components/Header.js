@@ -1,20 +1,18 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import icon from '../images/unfold_icon_2.png'
+import './styles.css'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <img src={icon} alt="icon" style={{ maxWidth: '100%', maxHeight: '80%', paddingTop: '7%' }} />
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Unfold Software Development</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Desenvolvimento Descomplicado
         </p>
       </div>
     </div>
@@ -26,7 +24,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Intro
+            Quem Somos
           </button>
         </li>
         <li>
@@ -35,7 +33,7 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            Especialidades
           </button>
         </li>
         <li>
@@ -44,7 +42,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            About
+            Responsável
           </button>
         </li>
         <li>
@@ -53,7 +51,7 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            Fale conosco
           </button>
         </li>
       </ul>
