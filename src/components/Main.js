@@ -116,20 +116,10 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-              <a href="tel:+55498868-9761" className="icon fa-whatsapp">
+              <a href="https://api.whatsapp.com/send?phone=5549988689761" className="icon fa-whatsapp">
                 <span className="label">Whatsapp</span>
               </a>
             </li>
-            {/* <li>
-              <a href="#" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li> */}
             <li>
               <a
                 href="https://github.com/vyk1"
