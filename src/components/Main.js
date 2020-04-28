@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/quem_somos.png'
-import pic02 from '../images/code.jpg'
+import pic02 from '../images/programming.jpg'
 
 class Main extends React.Component {
   render() {
