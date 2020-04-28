@@ -75,9 +75,6 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Responsável</h2>
-          {/* <span className="image main">
-            <img src={pic03} alt="" />
-          </span> */}
           <p>
             Confira o <a href="https://vyk1.github.io" target="_blank" rel="noopener noreferrer">Portifólio</a>
           </p>
@@ -94,6 +91,8 @@ class Main extends React.Component {
           <h2 className="major">Fale Conosco</h2>
           <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+
             <div className="field half first">
               <label htmlFor="name">Nome</label>
               <input required="true" type="text" name="name" id="name" />
