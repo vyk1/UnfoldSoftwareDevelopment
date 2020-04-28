@@ -1,6 +1,7 @@
 {
   "name": "unfold-software-development",
-  "description": "Website destinado à Unfold Software Development",
+  "private": true,
+  "description": "Website dedicado à Unfold Software Development",
   "version": "1.0.0",
   "author": "Victoria B. Martins",
   "dependencies": {
@@ -18,7 +19,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
