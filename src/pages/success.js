@@ -19,7 +19,7 @@ const Success = () => (
                     <h1>Sucesso!</h1>
                     <p> Obrigad@ por entra em contato conosco!
                     Espere por nossa resposta em breve <span role="img" aria-label="Winky">&#128521;</span>
-                    </p> {/* We really appreciate you giving us a moment of your time.</p> */}
+                    </p>
                     <Link href="/">
                         <p class="strong">
                             <i class="fa fa-hand-o-left" aria-hidden="true"></i>
