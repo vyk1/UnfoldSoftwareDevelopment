@@ -116,6 +116,11 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
+              <a href="tel:+55498868-9761" className="icon fa-whatsapp">
+                <span className="label">Whatsapp</span>
+              </a>
+            </li>
+            {/* <li>
               <a href="#" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
@@ -124,7 +129,7 @@ class Main extends React.Component {
               <a href="#" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://github.com/vyk1"
@@ -132,6 +137,15 @@ class Main extends React.Component {
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:unfoldsd@gmail.com"
+                rel="noopener noreferrer"
+                className="icon fa-envelope"
+              >
+                <span className="label">E-mail</span>
               </a>
             </li>
           </ul>
