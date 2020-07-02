@@ -12,7 +12,7 @@ const Header = props => (
       <div className="inner">
         <h1>Unfold Software Development</h1>
         <p>
-          Desenvolvimento Descomplicado
+          Problemas reais requerem soluções digitais
         </p>
       </div>
     </div>

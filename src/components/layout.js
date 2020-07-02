@@ -41,8 +41,8 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Desenvolvimento de Sistemas' },
-              { name: 'keywords', content: 'unfold, software, development, desenvolvimento, sistemas, mobile, websites, curitibanos, pwa, aplicativo, empresa, empreendedorismo, tsuru, origami' },
+              { name: 'description', content: 'Problemas reais requerem soluções digitais' },
+              { name: 'keywords', content: 'unfold, software, development, desenvolvimento, soluções, modernas, digitais, sistemas, mobile, websites, curitibanos, pwa, aplicativo, empresa, empreendedorismo, tsuru, origami' },
             ]}
           >
             <html lang="pt-BR" />
