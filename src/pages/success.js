@@ -11,18 +11,18 @@ const Success = () => (
             <title>Unfold Software | Sucesso</title>
         </Helmet>
 
-        <div class="header-custom email-signup-thankyou">
-            <div class="content">
-                <div class="left-hole"></div>
-                <div class="right-hole"></div>
-                <div class="main-content">
+        <div className="header-custom email-signup-thankyou">
+            <div className="content">
+                <div className="left-hole"></div>
+                <div className="right-hole"></div>
+                <div className="main-content">
                     <h1>Sucesso!</h1>
                     <p> Obrigad@ por entra em contato conosco!
                     Espere por nossa resposta em breve <span role="img" aria-label="Winky">&#128521;</span>
                     </p>
-                    <Link href="/">
-                        <p class="strong">
-                            <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                    <Link to="/">
+                        <p className="strong">
+                            <i className="fa fa-hand-o-left" aria-hidden="true"></i>
                         Voltar para a página inicial</p>
                     </Link>
                 </div>
