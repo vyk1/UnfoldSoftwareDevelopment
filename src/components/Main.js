@@ -89,7 +89,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Fale Conosco</h2>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/" data-netlify-recaptcha="true" >
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success" >
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
 
@@ -105,7 +105,6 @@ class Main extends React.Component {
               <label htmlFor="message">Mensagem</label>
               <textarea required name="message" id="message" rows="4"></textarea>
             </div>
-            <div data-netlify-recaptcha="true"></div>
             <ul className="actions">
               <li>
                 <input type="submit" value="Enviar Mensagem" className="special" />
