@@ -3,7 +3,7 @@
   "private": true,
   "description": "Website dedicado à Unfold Software Development",
   "version": "1.0.0",
-  "author": "Victoria B. Martins",
+  "author": "Victoria Botelho Martins",
   "dependencies": {
     "gatsby": "^2.19.5",
     "gatsby-cli": "^2.11.21",
@@ -14,7 +14,8 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-particles-js": "^3.3.0"
   },
   "keywords": [
     "gatsby"

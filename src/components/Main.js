@@ -115,25 +115,24 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
+            <h4>Ou se preferir...</h4>
             <li>
-              <a href="https://api.whatsapp.com/send?phone=5549988689761" className="icon fa-whatsapp">
+              <h5>Whatsapp</h5>
+              <a
+                href="https://api.whatsapp.com/send?phone=5549988689761"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon fa-whatsapp text-center">
                 <span className="label">Whatsapp</span>
               </a>
             </li>
             <li>
-              <a
-                href="https://github.com/vyk1"
-                rel="noopener noreferrer"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-            <li>
+              <h5>Email</h5>
               <a
                 href="mailto:unfoldsd@gmail.com"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="icon fa-envelope"
+                className="icon fa-envelope text-center"
               >
                 <span className="label">E-mail</span>
               </a>

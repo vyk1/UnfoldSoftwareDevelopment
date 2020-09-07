@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 import Helmet from 'react-helmet'
+import Particles from 'react-particles-js'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -96,7 +97,7 @@ class IndexPage extends React.Component {
         <Helmet>
           <title>Unfold Software | Inicial</title>
         </Helmet>
-        
+
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
             <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
@@ -110,7 +111,27 @@ class IndexPage extends React.Component {
             />
             <Footer timeout={this.state.timeout} />
           </div>
-          <div id="bg"></div>
+          <div id="bg">
+            <Particles
+              params={{
+                "particles": {
+                  "number": {
+                    "value": 100
+                  },
+                  "size": {
+                    "value": 2
+                  }
+                },
+                "interactivity": {
+                  "events": {
+                    "onhover": {
+                      "enable": false,
+                      "mode": "repulse"
+                    }
+                  }
+                }
+              }} />
+          </div>
         </div>
       </Layout>
     )
