@@ -116,18 +116,10 @@ class IndexPage extends React.Component {
               params={{
                 "particles": {
                   "number": {
-                    "value": 100
+                    "value": 50
                   },
                   "size": {
                     "value": 2
-                  }
-                },
-                "interactivity": {
-                  "events": {
-                    "onhover": {
-                      "enable": false,
-                      "mode": "repulse"
-                    }
                   }
                 }
               }} />
