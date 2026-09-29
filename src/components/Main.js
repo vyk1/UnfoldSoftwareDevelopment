@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/quem_somos.png'
 import pic02 from '../images/programming.jpg'
+import projects from '../data/projects'
 
 class Main extends React.Component {
   render() {
@@ -64,6 +65,55 @@ class Main extends React.Component {
           <p>
             Trabalhamos para que tudo você precise se preocupar seja apenas com a Hospedagem <span role="img" aria-label="Winky">&#128521;</span>
           </p>
+          {close}
+        </article>
+
+        <article
+          id="projects"
+          className={`${this.props.article === 'projects' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+            }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Projetos</h2>
+          {projects.map((project, index) => (
+            <section key={project.id}>
+              {index > 0 && <hr />}
+              <h3>{project.name}</h3>
+              {project.media && project.media.type === 'image' && (
+                <span className="image main">
+                  <img src={project.media.src} alt={project.media.alt || project.name} />
+                </span>
+              )}
+              {project.media && project.media.type === 'video' && (
+                <video
+                  className="project-video"
+                  src={project.media.src}
+                  poster={project.media.poster}
+                  controls
+                  muted
+                  playsInline
+                  preload="none"
+                />
+              )}
+              <p>{project.description}</p>
+              {project.link && (
+                <ul className="actions">
+                  <li>
+                    <a
+                      href={project.link.href}
+                      className="button"
+                      {...(project.link.href.startsWith('http')
+                        ? { target: '_blank', rel: 'noopener noreferrer' }
+                        : {})}
+                    >
+                      {project.link.label}
+                    </a>
+                  </li>
+                </ul>
+              )}
+            </section>
+          ))}
           {close}
         </article>
 
