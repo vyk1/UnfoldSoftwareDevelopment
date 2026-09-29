@@ -126,7 +126,10 @@ class Main extends React.Component {
         >
           <h2 className="major">Responsável</h2>
           <p>
-            Confira o <a href="https://vyk1.github.io" target="_blank" rel="noopener noreferrer">Portifólio</a>
+            À frente da <i>Unfold</i> está Victoria Botelho Martins, M.Sc. em Ciência da Computação pela UFSC e engenheira <i>backend</i> com experiência em Java, Spring Boot e AWS.
+          </p>
+          <p>
+            Confira o <a href="https://vyk1.github.io" target="_blank" rel="noopener noreferrer">Portfólio</a>
           </p>
           {close}
         </article>
