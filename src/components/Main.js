@@ -176,16 +176,6 @@ class Main extends React.Component {
           <ul className="icons">
             <h4>Ou se preferir...</h4>
             <li>
-              <h5>Whatsapp</h5>
-              <a
-                href="https://api.whatsapp.com/send?phone=5549988689761"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="icon fa-whatsapp text-center">
-                <span className="label">Whatsapp</span>
-              </a>
-            </li>
-            <li>
               <h5>Email</h5>
               <a
                 href="mailto:unfoldsd@gmail.com"
