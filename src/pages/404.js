@@ -12,8 +12,8 @@ const NotFoundPage = () => (
     <h1>Oops,</h1>
     <p>Página não encontrada.</p>
     <p>
-      <Link href="/">
-        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+      <Link to="/">
+        <i className="fa fa-hand-o-left" aria-hidden="true"></i>
       Clique aqui para voltar
       </Link>
     </p>
