@@ -42,7 +42,7 @@ const Layout = ({ children, location }) => {
             title={data.site.siteMetadata.title}
             meta={[
               { name: 'description', content: 'Obstáculos reais, soluções digitais' },
-              { name: 'keywords', content: 'victoria botelho martins, unfold, software, development, desenvolvimento, soluções, modernas, digitais, sistemas, mobile, websites, curitibanos, pwa, aplicativos, empresa, empreendedorismo, tsuru, origami, santa catarina' },
+              { name: 'keywords', content: 'victoria botelho martins, unfold, software, development, desenvolvimento, soluções, modernas, digitais, sistemas, sistemas web, websites, chapecó, automação de processos, transformação digital, bpm, camunda, integrações, backend, empresa, empreendedorismo, tsuru, origami, santa catarina' },
             ]}
           >
             <html lang="pt-BR" />
