@@ -57,13 +57,19 @@ class Main extends React.Component {
             <img src={pic02} alt="Coding" />
           </span>
           <p>
-            Arquitetamos e desenvolvemos aplicativos <i>mobile</i> (iOS e Android), websites e <i>Progressive Web Apps</i>.
+            Arquitetamos e desenvolvemos sistemas <i>web</i> sob medida para o seu negócio.
+          </p>
+          <p>
+            Automação de processos - Modelamos e automatizamos fluxos de trabalho com BPM (Camunda), reduzindo tarefas manuais e retrabalho.
+          </p>
+          <p>
+            Integrações e sistemas <i>backend</i> - Conectamos seus sistemas e serviços com APIs robustas e escaláveis.
           </p>
           <p>
             SEO - Temos ferramentas para que seu site apareça na primeira página!
           </p>
           <p>
-            Trabalhamos para que tudo você precise se preocupar seja apenas com a Hospedagem <span role="img" aria-label="Winky">&#128521;</span>
+            Cuidamos do projeto de ponta a ponta, do levantamento de requisitos à publicação, para que você possa focar no seu negócio <span role="img" aria-label="Winky">&#128521;</span>
           </p>
           {close}
         </article>
