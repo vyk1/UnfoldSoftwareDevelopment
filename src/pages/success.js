@@ -17,8 +17,8 @@ const Success = () => (
                 <div className="right-hole"></div>
                 <div className="main-content">
                     <h1>Sucesso!</h1>
-                    <p> Obrigad@ por entra em contato conosco!
-                    Espere por nossa resposta em breve <span role="img" aria-label="Winky">&#128521;</span>
+                    <p> Obrigado por entrar em contato conosco!
+                    Responderemos em breve <span role="img" aria-label="Winky">&#128521;</span>
                     </p>
                     <Link to="/">
                         <p className="strong">
