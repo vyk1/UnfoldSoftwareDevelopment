@@ -32,6 +32,7 @@ const Layout = ({ children, location }) => {
           site {
             siteMetadata {
               title
+              description
             }
           }
         }
@@ -41,7 +42,7 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Obstáculos reais, soluções digitais' },
+              { name: 'description', content: data.site.siteMetadata.description },
               { name: 'keywords', content: 'victoria botelho martins, unfold, software, development, desenvolvimento, soluções, modernas, digitais, sistemas, sistemas web, websites, chapecó, automação de processos, transformação digital, bpm, camunda, integrações, backend, empresa, empreendedorismo, tsuru, origami, santa catarina' },
             ]}
           >

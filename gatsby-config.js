@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Unfold Software Development',
     author: 'Victoria Botelho Martins',
-    description: 'Website destinado à Unfold Software Development',
+    description:
+      'Sistemas web sob medida, automação de processos (BPM/Camunda) e integrações em Chapecó, SC. Transformação digital para o seu negócio.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
