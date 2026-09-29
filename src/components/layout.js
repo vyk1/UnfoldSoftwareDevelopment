@@ -33,6 +33,7 @@ const Layout = ({ children, location }) => {
             siteMetadata {
               title
               description
+              siteUrl
             }
           }
         }
@@ -43,6 +44,16 @@ const Layout = ({ children, location }) => {
             title={data.site.siteMetadata.title}
             meta={[
               { name: 'description', content: data.site.siteMetadata.description },
+              { property: 'og:type', content: 'website' },
+              { property: 'og:locale', content: 'pt_BR' },
+              { property: 'og:site_name', content: data.site.siteMetadata.title },
+              { property: 'og:title', content: data.site.siteMetadata.title },
+              { property: 'og:description', content: data.site.siteMetadata.description },
+              { property: 'og:url', content: data.site.siteMetadata.siteUrl },
+              { property: 'og:image', content: `${data.site.siteMetadata.siteUrl}/og-image.jpg` },
+              { property: 'og:image:width', content: '1200' },
+              { property: 'og:image:height', content: '630' },
+              { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'keywords', content: 'victoria botelho martins, unfold, software, development, desenvolvimento, soluções, modernas, digitais, sistemas, sistemas web, websites, chapecó, automação de processos, transformação digital, bpm, camunda, integrações, backend, empresa, empreendedorismo, tsuru, origami, santa catarina' },
             ]}
           >
