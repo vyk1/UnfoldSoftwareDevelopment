@@ -56,6 +56,27 @@ const Layout = ({ children, location }) => {
               { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'keywords', content: 'victoria botelho martins, unfold, software, development, desenvolvimento, soluções, modernas, digitais, sistemas, sistemas web, websites, chapecó, automação de processos, transformação digital, bpm, camunda, integrações, backend, empresa, empreendedorismo, tsuru, origami, santa catarina' },
             ]}
+            script={[
+              {
+                type: 'application/ld+json',
+                innerHTML: JSON.stringify({
+                  '@context': 'https://schema.org',
+                  '@type': 'Organization',
+                  name: data.site.siteMetadata.title,
+                  url: data.site.siteMetadata.siteUrl,
+                  logo: `${data.site.siteMetadata.siteUrl}/icons/icon-512x512.png`,
+                  description: data.site.siteMetadata.description,
+                  email: 'unfoldsd@gmail.com',
+                  taxID: '67.318.425/0001-14',
+                  address: {
+                    '@type': 'PostalAddress',
+                    addressLocality: 'Chapecó',
+                    addressRegion: 'SC',
+                    addressCountry: 'BR',
+                  },
+                }),
+              },
+            ]}
           >
             <html lang="pt-BR" />
           </Helmet>
